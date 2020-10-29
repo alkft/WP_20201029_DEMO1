@@ -44,12 +44,15 @@
             this.btnDraw.TabIndex = 0;
             this.btnDraw.Text = "抽";
             this.btnDraw.UseVisualStyleBackColor = true;
+            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
             // picResult
             // 
+            this.picResult.Image = global::WP_2020_01_HW02_A32000.Properties.Resources._001;
             this.picResult.Location = new System.Drawing.Point(372, 169);
             this.picResult.Name = "picResult";
             this.picResult.Size = new System.Drawing.Size(303, 357);
+            this.picResult.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picResult.TabIndex = 1;
             this.picResult.TabStop = false;
             // 
@@ -83,6 +86,7 @@
             this.Controls.Add(this.btnDraw);
             this.Name = "frmGame";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picResult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
